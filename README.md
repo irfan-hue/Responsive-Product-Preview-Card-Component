@@ -1,0 +1,1 @@
+# Responsive-Product-Preview-Card-Component
