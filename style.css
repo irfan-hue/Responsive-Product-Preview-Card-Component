@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --Montserrat: "Montserrat", sans-serif;
+    --montserrat-font-weight: 500;
+    --Fraunces: "Fraunces", serif;
+    --fraunces-font-weight: 700;
+    --primary-dark-cyan: hsl(158, 36%, 37%);
+    --primary-cream: hsl(30, 38%, 92%);
+    --dark-blue: hsl(212, 21%, 14%);
+    --dark-grayish-blue: hsl(228, 12%, 48%);
+    --secondary: #a8a6a8;
+    --white: hsl(0, 0%, 100%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--primary-cream);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.card {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--white);
+    overflow: hidden;
+    border-radius: 15px;
+    margin: 0 auto;
+}
+
+.card .desktop-image {
+    display: none;
+}
+
+.card .mobile-image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.content {
+    width: 100%;
+    background-color: var(--white);
+}
+
+.content .perfume {
+    color: var(--secondary);
+    font-family: var(--Montserrat);
+    font-size: 14px;
+    letter-spacing: 5px;
+    margin: 1.9rem 1.2rem 0 1.8rem;
+}
+
+.content .main-h1 {
+    width: 90%;
+    font-family: var(--Fraunces);
+    font-weight: var(--fraunces-font-weight);
+    margin: 1rem 0 0 1.8rem;
+    line-height: 32px;
+}
+
+.content .para {
+    width: 78%;
+    font-family: var(--Montserrat);
+    color: var(--dark-grayish-blue);
+    margin: 1.5rem 0 0 1.8rem;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.content .price-section {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin: 1.5rem 0 0 1.8rem;
+}
+
+.price-section .price {
+    font-family: var(--Fraunces);
+    color: var(--primary-dark-cyan);
+}
+
+.price-section .discount {
+    font-family: var(--Montserrat);
+    font-weight: var(--montserrat-font-weight);
+    color: var(--secondary);
+    text-decoration-line: line-through;
+}
+
+.content .btn {
+    margin: 1.5rem 0 0 1.8rem;
+}
+
+.btn button {
+    display: inline-block;
+    background-color: var(--primary-dark-cyan);
+    color: var(--white);
+    font-family: var(--Montserrat);
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    padding: 1rem 3.8rem;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    position: relative;
+}
+
+.btn .cart {
+    margin-right: 0.7rem;
+}
+
+.btn button:hover {
+    background-color: #193D2E;
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 1440px) {
+    .card {
+        width: 40vw;
+    }
+
+    .card .desktop-image {
+        display: block;
+        width: 50%;
+        height: auto;
+    }
+
+    .card .mobile-image {
+        display: none;
+    }
+
+    .content {
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: 1500px) {
+    .card {
+        width: 38%;
+        display: flex;
+        background-color: var(--white);
+        overflow: hidden;
+        border-radius: 15px;
+    }
+
+    .card .desktop-image {
+        display: block;
+        width: 50%;
+        height: auto;
+    }
+
+    .card .mobile-image {
+        display: none;
+    }
+
+    .content {
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+    .card {
+        width: 36%;
+        display: flex;
+        background-color: var(--white);
+        overflow: hidden;
+        border-radius: 15px;
+    }
+
+    .card .desktop-image {
+        display: block;
+        width: 50%;
+        height: auto;
+    }
+
+    .card .mobile-image {
+        display: none;
+    }
+
+    .content {
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: 1700px) {
+    .card {
+        width: 34%;
+        display: flex;
+        background-color: var(--white);
+        overflow: hidden;
+        border-radius: 15px;
+    }
+
+    .card .desktop-image {
+        display: block;
+        width: 50%;
+        height: auto;
+    }
+
+    .card .mobile-image {
+        display: none;
+    }
+
+    .content {
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: 1800px) {
+    .card {
+        width: 32%;
+        display: flex;
+        background-color: var(--white);
+        overflow: hidden;
+        border-radius: 15px;
+    }
+
+    .card .desktop-image {
+        display: block;
+        width: 50%;
+        height: auto;
+    }
+
+    .card .mobile-image {
+        display: none;
+    }
+
+    .content {
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: 1880px) {
+    .card {
+        width: 30%;
+        display: flex;
+        background-color: var(--white);
+        overflow: hidden;
+        border-radius: 15px;
+    }
+
+    .card .desktop-image {
+        display: block;
+        width: 50%;
+        height: auto;
+    }
+
+    .card .mobile-image {
+        display: none;
+    }
+
+    .content {
+        width: 50%;
+    }
+}
