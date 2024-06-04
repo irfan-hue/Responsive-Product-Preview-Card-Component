@@ -92,9 +92,10 @@ body {
 }
 
 .price-section .discount {
+    color: var(--secondary);
     font-family: var(--Montserrat);
     font-weight: var(--montserrat-font-weight);
-    color: var(--secondary);
+    font-size: 10px;
     text-decoration-line: line-through;
 }
 
